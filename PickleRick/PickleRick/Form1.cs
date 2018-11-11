@@ -11,11 +11,12 @@ using System.IO;
 using System.Drawing.Imaging;
 using System.Drawing.Drawing2D;
 
+
 namespace PickleRick
 {
     public partial class Form1 : Form
     {
-  
+        #region Cdigop1
         public Form1()
         {
             InitializeComponent();
@@ -79,19 +80,59 @@ namespace PickleRick
                 dY = e.Y - cY;
             }
         }
-
+#endregion
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
 
-            //g.FillPie(mySolidBrush, 393, 164, 433, 126,48,15 );
-            //myGraphics.DrawArc(myPen, 0, 0, 140, 70, 0, 120);
-            //LinearGradientBrush myLinearGradientBrush = new LinearGradientBrush(myRectangle,Color.Blue,Color.Green,LinearGradientMode.Horizontal);
-            //myGraphics.FillEllipse(myLinearGradientBrush, myRectangle);
 
-            //g.FillClosedCurve(mySolidBrush, myPointArray);
+            #region ColorDest
+            System.Drawing.Color Dest1 = System.Drawing.ColorTranslator.FromHtml("#5B3832");
+            System.Drawing.Color Dest2 = System.Drawing.ColorTranslator.FromHtml("#765953");
+            System.Drawing.Color Dest3 = System.Drawing.ColorTranslator.FromHtml("#493A27");
+            System.Drawing.Color Dest4 = System.Drawing.ColorTranslator.FromHtml("#977D58");
+            SolidBrush ColoDest1 = new SolidBrush(Dest1);
+            SolidBrush ColoDest2 = new SolidBrush(Dest2);
+            SolidBrush ColoDest3 = new SolidBrush(Dest3);
+            SolidBrush ColoDest4 = new SolidBrush(Dest4);
+            #endregion
+            #region ColoresParedes
+            System.Drawing.Color ColoFondoPared= System.Drawing.ColorTranslator.FromHtml("#54554D");
+            SolidBrush ColorPared1 = new SolidBrush(ColoFondoPared);
+            System.Drawing.Color ColoBordePared = System.Drawing.ColorTranslator.FromHtml("#49443E");
+            SolidBrush ColorPared2 = new SolidBrush(ColoFondoPared);
+            System.Drawing.Color ColoFondoG = System.Drawing.ColorTranslator.FromHtml("#656058");
+            SolidBrush ColorFG = new SolidBrush(ColoFondoG);
+
+            System.Drawing.Color ColoF1 = System.Drawing.ColorTranslator.FromHtml("#302F2A");
+            SolidBrush ColorF1 = new SolidBrush(ColoF1);
+            System.Drawing.Color ColoF2 = System.Drawing.ColorTranslator.FromHtml(" #817867");
+            SolidBrush ColorF2 = new SolidBrush(ColoF2);
+            System.Drawing.Color ColoF3 = System.Drawing.ColorTranslator.FromHtml("#655B51");
+            SolidBrush ColorF3 = new SolidBrush(ColoF3);
+            System.Drawing.Color ColoF4 = System.Drawing.ColorTranslator.FromHtml("#C4BAB0");
+            SolidBrush ColorF4 = new SolidBrush(ColoF4);
+            System.Drawing.Color ColoF5 = System.Drawing.ColorTranslator.FromHtml("#7C7362");
+            SolidBrush ColorF5 = new SolidBrush(ColoF5);
+            System.Drawing.Color ColoF6 = System.Drawing.ColorTranslator.FromHtml("#423731");
+            SolidBrush ColorF6 = new SolidBrush(ColoF6);
+            System.Drawing.Color ColoF7 = System.Drawing.ColorTranslator.FromHtml("#5F5B58");
+            SolidBrush ColorF7 = new SolidBrush(ColoF7);
+         
+            #endregion
+            #region ColorMueble
+            System.Drawing.Color ColoM1 = System.Drawing.ColorTranslator.FromHtml("#413936");
+            SolidBrush ColorM1 = new SolidBrush(ColoM1);
+            System.Drawing.Color ColoM2 = System.Drawing.ColorTranslator.FromHtml("#2D2D25");
+            SolidBrush ColorM2 = new SolidBrush(ColoM2);
+            System.Drawing.Color ColoM3 = System.Drawing.ColorTranslator.FromHtml("#4E443A");
+            SolidBrush ColorM3 = new SolidBrush(ColoM3);
+
+            
+            #endregion
 
             SolidBrush ColorNegro = new SolidBrush(Color.Black);
             SolidBrush ColorHuesos = new SolidBrush(Color.Gray);
+           
             SolidBrush ColorMuñecaSuperiorIzquierda = new SolidBrush(Color.Orange);
             SolidBrush ColorMuñecaInferiorIzquierda1 = new SolidBrush(Color.DimGray);
             SolidBrush ColorMuñecaInferiorIzquierda2 = new SolidBrush(Color.Gray);
@@ -103,8 +144,312 @@ namespace PickleRick
             Graphics g = e.Graphics;
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
+            #region Fondo
+            Point[] C00 =
+            {
+                new Point(589,437),
+                new Point(538,0),
+                new Point(0,0),
+                new Point(0,438)
+                 
+            }; 
+            Point[] F1 =
+            {
+                new Point(589,437),
+                new Point(847,386),
+                new Point(847,464),
+                new Point(587,465)
+            };
+            Point[] F2 =
+            {
+                new Point(589,437),
+                new Point(179,437),
+                new Point(177,469),
+                new Point(587,465)
+            };
+            Point[] F3 =
+            {
+                new Point(589,437),
+                new Point(847,386),
+                new Point(847,135),
+                new Point(538,0)
+            };
+            Point[] F4 = 
+            {
+                new Point(538,0),
+                new Point(847,135),
+                new Point(847,0)
+                
+            };
+            Point[] F5 = 
+            {
+                new Point(0,474),
+                new Point(49,473),
+                new Point(178,468),
+                new Point(587,465),
+                new Point(847,465),
+                new Point(847,567),
+                new Point(0,567)
+            };
+
+            g.FillPolygon(ColorFG, C00);
+            g.DrawPolygon(PDelg, F1);
+            g.FillPolygon(ColorF1,F1);
+            g.DrawPolygon(PDelg, F2);
+            g.FillPolygon(ColorF1, F2);
+            g.DrawPolygon(PDelg, F3);
+            g.FillPolygon(ColorF2, F3);
+            g.DrawPolygon(PDelg, F4);
+            g.FillPolygon(ColorF3, F4);
+            g.DrawPolygon(PDelg, F5);
+            g.FillPolygon(ColorF4, F5);
+            g.DrawLine(PDelg,194,473,0,485);
+            g.DrawLine(PDelg,316,470,0,503);
+            g.DrawLine(PDelg,363,468,89,567);
+            g.DrawLine(PDelg,427,469,430,567);
+            g.DrawLine(PDelg,471,469,725,567);
+            g.DrawLine(PDelg,501,469,848,512);
+            g.DrawLine(PDelg,0,560,848,559);
+            g.DrawLine(PDelg,0,522,848,522);
+            g.DrawLine(PDelg,0,494,848,489);
+            g.DrawLine(PDelg,0,484,848,472);
+            g.DrawLine(PDelg,111,472,848,467);
+           
+            #endregion
+            #region CuadrosParedes
+            Point[] C21 = 
+            {
+                new Point(341,4),
+                new Point(415,0),
+                new Point(518,0),
+                new Point(547,220),
+                new Point(334,224)
+            };
+            Point[] C22 = 
+            {
+                new Point(335,0),
+                new Point(524,0),
+                new Point(554,227),
+                new Point(328,231)
+            };
+            Point[] C31 = 
+            {
+                new Point(212,284),
+                new Point(552,276),
+                new Point(568,425),
+                new Point(201,427)
+            };
+            Point[] C32 = 
+            {
+                new Point(217,289),
+                new Point(548,282),
+                new Point(562,421),
+                new Point(206,421)
+            };
+            Point[] C41 = 
+            {
+                new Point(573,200),
+                new Point(548,0),
+                new Point(695,0)
+                
+            };
+            Point[] C42 = 
+            {
+                new Point(576,182),
+                new Point(557,0),
+                new Point(687,0)
+            };
+            Point[] C51 = 
+            {
+                new Point(581,266),
+                new Point(758,36),
+                new Point(824,360),
+                new Point(601,423)
+            };
+            Point[] C52 = 
+            {
+                new Point(589,268),
+                new Point(753,59),
+                new Point(811,351),
+                new Point(606,416)
+            };
+            g.DrawPolygon(pnegro, C22);
+            g.FillPolygon(ColorPared1, C22);
+            g.DrawPolygon(pnegro,C21);
+            g.FillPolygon(ColorPared1, C21);
+            g.DrawPolygon(pnegro, C31);
+            g.FillPolygon(ColorPared1, C31);
+            g.DrawPolygon(pnegro, C32);
+            g.FillPolygon(ColorPared1, C32);
 
 
+            g.DrawPolygon(pnegro, C41);
+            //g.FillPolygon(ColorPared1, C41);
+            g.DrawPolygon(pnegro, C42);
+            //g.FillPolygon(ColorPared1, C42);
+            g.DrawPolygon(pnegro, C51);
+            //g.FillPolygon(ColorPared, C41);
+            g.DrawPolygon(pnegro, C52);
+            
+
+            g.DrawLine(pnegro,573,200,576,182);
+            g.DrawLine(pnegro, 341, 4, 335, 0);g.DrawLine(pnegro,547,220,554,227);g.DrawLine(pnegro,334,224,328,231);
+            g.DrawLine(pnegro,193,245,563,238);g.DrawLine(pnegro,194,250,564,245);g.DrawLine(pnegro,197,261,565,255);g.DrawLine(pnegro,196,266,567,260);
+            g.DrawLine(pnegro,563,238,717,0);g.DrawLine(pnegro,564,245,725,0);g.DrawLine(pnegro,565,255,735,0);g.DrawLine(pnegro,567,260,745,0);
+            
+            g.DrawLine(pnegro,766,0,848,365);g.DrawLine(pnegro,774,0,848,315);g.DrawLine(pnegro,779,0,848,294);
+            g.DrawLine(pnegro,795,0,848,213);g.DrawLine(pnegro,805,0,848,174);g.DrawLine(pnegro,817,0,848,123);
+            Point[] F6 =
+            {
+                new Point(817,0),
+                new Point(848,123),
+                new Point(848,0)
+            };
+            
+            g.FillPolygon(ColorF6, F6);
+            Point[] F7 =
+            {
+                new Point(821,0),
+                new Point(831,38),
+                new Point(848,20),
+                new Point(848,0)
+            };
+            g.DrawPolygon(pnegro, F7);
+            g.FillPolygon(ColorPared1,F7);
+            Point[] F8 =
+            {
+                new Point(836,11),
+                new Point(821,8),
+                new Point(813,0),
+                new Point(831,2),
+                new Point(837,7)
+                
+            };
+            g.DrawClosedCurve(pnegro,F8);
+            g.FillClosedCurve(ColorF7,F8);
+           
+            
+
+            #endregion
+            #region MuebleNuevo
+            Point[] M1 =
+            {
+                new Point(56,419),
+                new Point(178,437),
+                new Point(177,469),
+                new Point(49,473)
+              };
+            g.DrawPolygon(pnegro,M1);
+            g.FillPolygon(ColorM1, M1);
+            Point[] M2 =
+            {
+                new Point(55,419),
+                new Point(49,473),
+                new Point(0,475),
+                new Point(0,419)
+                
+              
+            };
+            g.DrawPolygon(pnegro, M2);
+            g.FillPolygon(ColorM2, M2);
+            Point[] M3 =
+            {
+                new Point(0,232),
+                new Point(38,232),
+                new Point(17,419),
+                new Point(0,419)
+                
+              
+            };
+            g.DrawPolygon(pnegro, M3);
+            g.FillPolygon(ColorM2, M3);
+            g.FillPolygon(ColorM2, M2);
+            Point[] M4 =
+            {
+                new Point(0,232),
+                new Point(38,232),
+                new Point(38,229),
+                new Point(0,229)
+                
+              
+            };
+            g.DrawPolygon(pnegro, M4);
+            g.FillPolygon(ColorM2, M4);
+            Point[] M5 =
+            {
+                new Point(0,229),
+                new Point(38,229),
+                new Point(44,169),
+                new Point(0,170)
+              
+            };
+            g.DrawPolygon(pnegro, M5);
+            g.FillPolygon(ColorM2, M5);
+            Point[] M6 =
+            {
+                new Point(0,218),
+                new Point(14,218),
+                new Point(19,182),
+                new Point(0,182)
+              
+            };
+            g.DrawPolygon(pnegro, M6);
+            g.FillPolygon(ColorM2, M6);
+            Point[] M7 =
+            {
+                new Point(0,213),
+                new Point(10,213),
+                new Point(13,188),
+                new Point(0,188)
+              
+            };
+            g.DrawPolygon(pnegro, M7);
+            g.FillPolygon(ColorM2, M7);
+            Point[] M8 =
+            {
+                new Point(0,170),
+                new Point(72,168),
+                new Point(191,270),
+                new Point(197,270),
+                new Point(77,162),
+                new Point(0,164)
+              
+            };
+            g.DrawPolygon(pnegro, M8);
+            g.FillPolygon(ColorM2, M8);
+            Point[] M9 =
+            {
+                new Point(44,165),
+                new Point(72,165),
+                new Point(47,418),
+                new Point(17,418)
+                
+                
+              
+            };
+            g.DrawPolygon(pnegro, M9);
+            g.FillPolygon(ColorM2, M9);
+            Point[] M10 =
+            {
+                new Point(72,168),
+                new Point(191,270),
+                new Point(174,438),
+                new Point(47,418)
+            };
+            g.DrawPolygon(pnegro, M10);
+            g.FillPolygon(ColorM1, M10);
+            Point[] M11 =
+            {
+                new Point(89,203),
+                new Point(178,279),
+                new Point(162,423),
+                new Point(69,405)
+            };
+            g.DrawPolygon(pnegro, M11);
+            g.FillPolygon(ColorM1, M11);
+
+
+            #endregion
 
             #region Espejo
             e.Graphics.DrawLine(pnegro, 2, 34, 185, 26);
@@ -609,7 +954,110 @@ namespace PickleRick
 
             #endregion
 
+            #region destapacaños
+            Point[] Destapacaño1 =
+            {
+                new Point(189,471),
+                new Point(190,468),
+                new Point(190,464),
+                new Point(191,460),
+                new Point(192,456),
+                new Point(194,452),
+                new Point(197,448),
+                new Point(199,444),
+                new Point(201,443),
+                new Point(204,439),
+                new Point(207,438),
+                new Point(211,437),
+                new Point(215,436),
+                new Point(229,436), 
+                new Point(232,437),
+                new Point(234,438),
+                new Point(237,439),
+                new Point(242,442),
+                new Point(246,446),
+                new Point(248,449), 
+                new Point(251,451),
+                new Point(252,455),
+                new Point(253,459),
+                new Point(254,462),
+                new Point(254,467),
+                new Point(254,471),
+            };
+            Point[] Destapacaño2 =
+            {
+                new Point(191,463),
+                new Point(253,463),
+            };
+            Point[] Destapacaño3 =
+            {
+                new Point(213,437),
+                new Point(215,430),
+                new Point(232,430),
+                new Point(234,437),
+             
+            };
+            Point[] Destapacaño4 =
+            {
+                new Point(220,429),
+                new Point(227,429),
+                new Point(240,279),
+                new Point(239,276),
+                new Point(239,273),
+                new Point(238,272),
+                new Point(235,272),
+                new Point(230,278),
+                new Point(226,335),
+                new Point(221,398),
+                new Point(220,419)
+               
+              
+            };
+
+            
+           
+            #endregion
+
+            #region ParedCentral
+            Point[] C11 =
+            {
+                new Point(237,7),
+                new Point(316,2),
+                new Point(302,226),
+                new Point(220,228),
+               
+            };
+            Point[] C12 =
+            {
+                new Point(233,2),
+                new Point(275,0),
+                new Point(320,0),
+                new Point(307,231),
+                new Point(215,232)
+               
+            };
+            Point Esq11 = new Point(237,7); Point Esq12 = new Point(233,2);
+            Point Esq21 = new Point(316,2); Point Esq22 = new Point(320,0);
+            Point Esq31 = new Point(302,226); Point Esq32 = new Point(307,231);
+            Point Esq41 = new Point(220,228); Point Esq42 = new Point(215,232);
+            #endregion
             #region Metodos
+            //ParedCentral
+           
+            Pen CBordeP=new Pen(Color.Black,2);
+            
+           
+
+
+            g.DrawPolygon(CBordeP, C12);
+            g.FillPolygon(ColorPared2, C12);
+            g.DrawPolygon(CBordeP, C11);
+            g.FillPolygon(ColorPared2,C11);
+            g.DrawLine(CBordeP,Esq11,Esq12);
+            g.DrawLine(CBordeP, Esq21, Esq22);
+            g.DrawLine(CBordeP, Esq31, Esq32);
+            g.DrawLine(CBordeP, Esq41, Esq42);
+
             //CuerpoContorno//
             g.DrawClosedCurve(PVerde, Cuerpo);
             
@@ -663,6 +1111,17 @@ namespace PickleRick
             g.DrawClosedCurve(pnegro, PiernaInferiorDerecha1);
             g.FillClosedCurve(ColorHuesos, PiernaInferiorDerecha1);
 
+            //Destapacaños
+            Pen DestBlack = new Pen(Color.Black, 1);
+            Pen DestPalo = new Pen(ColoDest3, 1);
+
+            g.DrawClosedCurve(DestBlack, Destapacaño1);
+            g.FillClosedCurve(ColoDest1, Destapacaño1);
+            g.DrawPolygon(DestBlack, Destapacaño2);
+            g.DrawClosedCurve(DestPalo, Destapacaño4);
+            g.FillClosedCurve(ColoDest4, Destapacaño4);
+            g.DrawClosedCurve(DestBlack, Destapacaño3);
+            g.FillClosedCurve(ColoDest1, Destapacaño3);
             #endregion
         }
 
