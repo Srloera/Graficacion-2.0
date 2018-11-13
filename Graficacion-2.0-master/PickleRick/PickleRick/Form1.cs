@@ -157,7 +157,32 @@ namespace PickleRick
             SolidBrush ColorF26 = new SolidBrush(ColoF26);
             System.Drawing.Color ColoF27 = System.Drawing.ColorTranslator.FromHtml("#2E292D");
             SolidBrush ColorF27 = new SolidBrush(ColoF27);
-
+            System.Drawing.Color ColoF28 = System.Drawing.ColorTranslator.FromHtml("#393732");
+            SolidBrush ColorF28 = new SolidBrush(ColoF28);
+            System.Drawing.Color ColoF29 = System.Drawing.ColorTranslator.FromHtml("#AC6251");
+            SolidBrush ColorF29 = new SolidBrush(ColoF29);
+            System.Drawing.Color ColoF30 = System.Drawing.ColorTranslator.FromHtml("#8B8B8B");
+            SolidBrush ColorF30 = new SolidBrush(ColoF30);
+            System.Drawing.Color ColoF31 = System.Drawing.ColorTranslator.FromHtml("#1D262B");
+            SolidBrush ColorF31 = new SolidBrush(ColoF31);
+            System.Drawing.Color ColoF32 = System.Drawing.ColorTranslator.FromHtml("#33484E");
+            SolidBrush ColorF32 = new SolidBrush(ColoF32);
+            System.Drawing.Color ColoF33 = System.Drawing.ColorTranslator.FromHtml("#2D2C28");
+            SolidBrush ColorF33 = new SolidBrush(ColoF33);
+            System.Drawing.Color ColoF34 = System.Drawing.ColorTranslator.FromHtml("#393834");
+            SolidBrush ColorF34 = new SolidBrush(ColoF34);
+            System.Drawing.Color ColoF35 = System.Drawing.ColorTranslator.FromHtml("#557924");
+            SolidBrush ColorF35 = new SolidBrush(ColoF35);
+            System.Drawing.Color ColoF36 = System.Drawing.ColorTranslator.FromHtml("#632525");
+            SolidBrush ColorF36 = new SolidBrush(ColoF36);
+            System.Drawing.Color ColoF37 = System.Drawing.ColorTranslator.FromHtml("#6B5D46");
+            SolidBrush ColorF37 = new SolidBrush(ColoF37);
+            System.Drawing.Color ColoF38 = System.Drawing.ColorTranslator.FromHtml("#383530");
+            SolidBrush ColorF38 = new SolidBrush(ColoF38);
+            System.Drawing.Color ColoF39 = System.Drawing.ColorTranslator.FromHtml("#A69577");
+            SolidBrush ColorF39 = new SolidBrush(ColoF39);
+            System.Drawing.Color ColoF40 = System.Drawing.ColorTranslator.FromHtml("#4E4C40");
+            SolidBrush ColorF40 = new SolidBrush(ColoF40);
             #endregion
             #region ColorMueble
             System.Drawing.Color ColoM1 = System.Drawing.ColorTranslator.FromHtml("#413936");
@@ -175,7 +200,7 @@ namespace PickleRick
             SolidBrush ColorOjos = new SolidBrush(Color.White);
 
             SolidBrush ColorBoton = new SolidBrush(Color.Red);
-
+            
             SolidBrush ColorMuñecaSuperiorIzquierda = new SolidBrush(Color.Orange);
             SolidBrush ColorMuñecaInferiorIzquierda1 = new SolidBrush(Color.DimGray);
             SolidBrush ColorMuñecaInferiorIzquierda2 = new SolidBrush(Color.Gray);
@@ -725,20 +750,204 @@ namespace PickleRick
                 new Point(533, 221)};
 
 
-
-            Point[] Taladro1 =
+            Point[] ManoDerecha =
                 {
-                new Point(397, 398),
-                new Point(394, 395),
-                new Point(391, 398),
-                new Point(393, 399),
-                new Point(394, 402),
-                new Point(392, 403),
-                new Point(389, 458),
-                new Point(394, 459),
-                new Point(397, 402),
-                new Point(398, 398)};
+                new Point(548, 219),
+                new Point(547, 221),
+                new Point(545, 221),
+                new Point(541, 218),
+                new Point(538, 215),
+                new Point(535, 211),
+                new Point(535, 207),
+                new Point(534, 204),
+                new Point(532, 199),
+                new Point(530, 197),
+                new Point(529, 195),
+                new Point(530, 193),
+                new Point(532, 189),
+                new Point(533, 184),
+                new Point(533, 180),
+                new Point(537, 180),
+                new Point(540, 182),
+                new Point(550, 181),
+                new Point(556, 178),
+                new Point(559, 179),
+                new Point(559, 182),
+                new Point(563, 181),
+                new Point(565, 184),
+                new Point(563, 187),
+                new Point(567, 188),
+                new Point(568, 192),
+                new Point(568, 196),
+                new Point(565, 203),
+                new Point(561, 212),
+                new Point(555, 220),
+                new Point(547, 219)};
 
+
+            Point[] DetallesManoDerecha1 =
+                {
+                new Point(549, 182),
+                new Point(551, 183),
+                new Point(550, 185),
+                new Point(548, 187),
+                new Point(540, 187),
+                new Point(538, 187),
+                new Point(537, 189),
+                new Point(537, 191)};
+
+            Point[] DetallesManoDerecha2 =
+                {
+                new Point(545, 187),
+                new Point(541, 195),
+                new Point(541, 198),
+                new Point(545, 200),
+                new Point(548, 197),
+                new Point(549, 189),
+                new Point(555, 185),
+                new Point(559, 181)};
+
+            Point[] DetallesManoDerecha3 =
+                {
+                new Point(546, 200),
+                new Point(546, 204),
+                new Point(548, 207),
+                new Point(551, 207),//
+                new Point(553, 201),
+                new Point(555, 194),
+                new Point(560, 190),
+                new Point(564, 187)};
+
+
+            Point[] DetallesManoDerecha4 =
+                {
+                new Point(551, 207),
+                new Point(551, 210),
+                new Point(554, 211),
+                new Point(557, 209),
+                new Point(562, 205)};
+
+
+            Point[] DetallesManoDerecha5 =
+                {
+                new Point(566, 196),
+                new Point(562, 198),
+                new Point(559, 202),
+                new Point(558, 205),
+                new Point(555, 207)};
+
+
+            Point[] DetallesManoDerecha6 =
+                {
+                new Point(550, 181),
+                new Point(554, 184),
+                new Point(555, 188),
+                new Point(553, 187),
+                new Point(550, 187),
+                new Point(550, 183)};
+
+            Point[] Taladro =
+                {
+                new Point(559, 180),
+                new Point(612, 88),
+                new Point(575, 199),
+                new Point(561, 194)};
+
+
+            Point[] ColorTaladro =
+                {
+                new Point(565, 196),
+                new Point(612, 88),
+                new Point(575, 199),
+                new Point(561, 194)};
+
+            Point[] DetallesTaladro0 =
+                {
+                new Point(571, 162),
+                new Point(551, 183),
+                new Point(550, 185),
+                new Point(548, 187),
+                new Point(540, 187),
+                new Point(538, 187),
+                new Point(537, 189),
+                new Point(537, 191)};
+
+
+            Point[] MadreEsaManoDerecha1 =
+                {
+                new Point(544, 182),
+                new Point(573, 207),
+                new Point(564, 227)};
+
+            Point[] MadreEsaManoDerecha2 =
+                {
+                new Point(544, 182),
+                new Point(580, 166),
+                new Point(606, 190),
+                new Point(573, 206)};
+
+            Point[] MadreEsaManoDerecha3 =
+                {
+                new Point(573, 206),
+                new Point(606, 190),
+                new Point(591, 228),
+                new Point(559, 240)};
+
+
+            Point[] MadreEsaManosDerecha4 =
+                {
+                new Point(571, 244),
+                new Point(571, 239),
+                new Point(573, 232),
+                new Point(577, 225),
+                new Point(581, 217),
+                new Point(587, 212),
+                new Point(597, 205),
+                new Point(603, 203),
+                new Point(607, 206),
+                new Point(608, 213),
+
+                new Point(604, 221),
+                new Point(599, 229),
+                new Point(593, 236),
+                new Point(586, 242),
+                new Point(578, 245),
+                new Point(573, 245)};
+
+
+            Point[] MadreEsaManosDerecha5 =
+                {
+                new Point(582, 231),
+                new Point(586, 225),
+                new Point(591, 221),
+                new Point(596, 219),
+                new Point(597, 223),
+                new Point(595, 227),
+                new Point(591, 231),
+                new Point(587, 234),
+                new Point(585, 234)};
+
+            Point[] DetallesMadreEsaManoDerecha =
+                {
+                new Point(585, 176),
+                new Point(587, 180),
+                new Point(586, 189),
+                new Point(583, 192),
+                new Point(578, 195),
+                new Point(575, 195),
+                new Point(569, 195),
+                new Point(558, 185),
+                new Point(560, 180),
+                new Point(564, 175)};
+
+            Point[] ColorDetallesMadreEsaManoDerecha =
+                {
+                new Point(588, 195),
+                new Point(581, 195),
+                new Point(578, 199),
+                new Point(567, 197),
+                new Point(567, 197),
+                new Point(563, 191)};
             #endregion
 
             #region ManoIzquierda
@@ -1110,6 +1319,24 @@ namespace PickleRick
                 new Point(410, 399),
                 new Point(420, 410)};
 
+            Point[] DetallesMadreEsa =
+                {
+                new Point(394, 284),
+                new Point(425, 403),
+                new Point(422, 392),
+                new Point(419, 372),
+                new Point(412, 358),
+                new Point(403, 354),
+                new Point(391, 346),
+                new Point(386, 345),
+                new Point(389, 353),
+                new Point(396, 361),
+                new Point(408, 367),
+                new Point(414, 377),
+                new Point(414, 381),
+                new Point(416, 396),
+                new Point(410, 399),
+                new Point(420, 410)};
 
 
             #endregion
@@ -1185,6 +1412,90 @@ namespace PickleRick
                 new Point(435, 202),
                 new Point(438, 200),
                 new Point(440, 196)};
+
+            Point[] Nariz =
+                {
+                new Point(448, 197),
+                new Point(451, 203),
+                new Point(450, 207),
+                new Point(448, 206),
+                new Point(443, 201)};
+
+            Point[] Boca =
+                {
+                new Point(456, 207),
+                new Point(461, 208),
+                new Point(462, 211),
+                new Point(462, 212),
+                new Point(461, 218),
+                new Point(458, 221),
+                new Point(453, 226),
+                new Point(446, 229),
+                new Point(436, 229),
+                new Point(429, 226),
+                new Point(424, 224),
+                new Point(424, 221),
+                new Point(423, 219),
+                new Point(422, 215),
+                new Point(423, 212),
+                new Point(427, 210),
+                new Point(435, 212),
+                new Point(440, 213),
+                new Point(446, 213),
+                new Point(452, 209),
+                new Point(455, 207)};
+
+            Point[] Lengua =
+                {
+                new Point(433, 225),
+                new Point(444, 217),
+                new Point(448, 216),
+                new Point(451, 217),
+                new Point(450, 219),
+
+                new Point(445, 223),
+                new Point(438, 227),
+                new Point(436, 226)};
+
+
+            Point[] DetallesBoca1 =
+                {
+                new Point(436, 210),
+                new Point(432, 209),
+                new Point(428, 208),
+                new Point(423, 208),
+                new Point(419, 211),
+
+                new Point(418, 215),
+                new Point(420, 220),
+                new Point(427, 224)};
+
+
+            Point[] DetallesBoca2 =
+                {
+
+                new Point(453, 207),
+                new Point(455, 206),
+                new Point(460, 206),
+                new Point(463, 208),
+                new Point(465, 212),
+                new Point(465, 215),
+                new Point(462, 219)};
+
+
+            Point[] DetallesFrente1 =
+                {
+                new Point(446, 174),
+                new Point(446, 175),
+                new Point(444, 176),
+                new Point(441, 176)};
+
+            Point[] DetallesFrente2 =
+                {
+                new Point(449, 177),
+                new Point(447, 179),
+                new Point(444, 180),
+                new Point(439, 179)};
             #endregion
 
             #region Huesos
@@ -1442,6 +1753,19 @@ namespace PickleRick
             g.FillPolygon(ColorF9, BrazoInferior);
             g.FillClosedCurve(ColorF11, HombroIzquierdo);
             //Manos//
+            g.DrawPolygon(pnegro, MadreEsaManoDerecha1);
+            g.FillPolygon(ColorF31, MadreEsaManoDerecha1);
+            g.DrawPolygon(pnegro, MadreEsaManoDerecha2);
+            g.FillPolygon(ColorF31, MadreEsaManoDerecha2);
+            g.DrawPolygon(pnegro, MadreEsaManoDerecha3);
+            g.FillPolygon(ColorF32, MadreEsaManoDerecha3);
+            g.DrawClosedCurve(pnegro, DetallesMadreEsaManoDerecha);
+            g.FillClosedCurve(ColorNegro, DetallesMadreEsaManoDerecha);
+
+            g.DrawPolygon(pnegro, Taladro);
+            g.FillPolygon(ColorF37, Taladro);
+            g.FillPolygon(ColorF38, ColorTaladro);
+            g.FillClosedCurve(ColorNegro, ColorDetallesMadreEsaManoDerecha);
             g.DrawPolygon(pnegro, MuñecaDerecha1);
             g.FillPolygon(ColorF26, MuñecaDerecha1);
             g.DrawLines(PDelg, DetallesMuñecaDerecha0);
@@ -1450,9 +1774,20 @@ namespace PickleRick
             g.FillClosedCurve(ColorBoton, DetallesMuñecaDerecha2);
             g.DrawClosedCurve(pnegro, MuñecaDerecha0);
             g.FillClosedCurve(ColorF27, MuñecaDerecha0);
+            g.DrawClosedCurve(pnegro, ManoDerecha);
+            g.FillClosedCurve(ColorF30, ManoDerecha);
+            g.DrawCurve(PDelg, DetallesManoDerecha1);
+            g.DrawCurve(PDelg, DetallesManoDerecha2);
+            g.DrawCurve(PDelg, DetallesManoDerecha3);
+            g.DrawCurve(PDelg, DetallesManoDerecha4);
+            g.DrawCurve(PDelg, DetallesManoDerecha5);
+            g.DrawClosedCurve(PDelg, DetallesManoDerecha6);
+            g.FillClosedCurve(ColorNegro, DetallesManoDerecha6);
+            g.DrawClosedCurve(pnegro, MadreEsaManosDerecha4);
+            g.FillClosedCurve(ColorF33, MadreEsaManosDerecha4);
 
-
-
+            g.DrawClosedCurve(pnegro, MadreEsaManosDerecha5);
+            g.FillClosedCurve(ColorF34, MadreEsaManosDerecha5);
 
 
             //Huesos//
@@ -1520,6 +1855,10 @@ namespace PickleRick
             g.FillPolygon(ColorF8, TobilloDerecho);
 
             //Ojos//
+            g.DrawCurve(PDelg, DetallesBoca1);
+            g.FillClosedCurve(ColorF35, DetallesBoca1);
+            g.DrawCurve(PDelg, DetallesBoca2);
+            g.FillClosedCurve(ColorF35, DetallesBoca2);
             g.DrawClosedCurve(pnegro, OjoIzquierdo);
             g.FillClosedCurve(ColorOjos, OjoIzquierdo);
             g.DrawClosedCurve(pnegro, OjoDerecho);
@@ -1528,9 +1867,15 @@ namespace PickleRick
             g.DrawLine(PGrue, 454, 188, 455, 188);
             g.DrawClosedCurve(pnegro, UniCeja);
             g.FillClosedCurve(ColorF24, UniCeja);
-            g.DrawCurve(pnegro, ParpadoOjoIzquierdo);
+            g.DrawCurve(PDelg, ParpadoOjoIzquierdo);
             g.FillClosedCurve(ColorF19, ColorParpadoOjoIzquierdo);
-
+            g.DrawCurve(PDelg, Nariz);
+            g.DrawClosedCurve(PDelg, Boca);
+            g.FillClosedCurve(ColorF28, Boca);
+            g.DrawClosedCurve(PDelg, Lengua);
+            g.FillClosedCurve(ColorF29, Lengua);
+            g.DrawCurve(PDelg, DetallesFrente1);
+            g.DrawCurve(PDelg, DetallesFrente2);
 
             //Destapacaños
             Pen DestBlack = new Pen(Color.Black, 1);
