@@ -39,3 +39,14 @@ C:\Users\SrLoera\Desktop\Graficacion-2.0-master\PickleRick\PickleRick\obj\Debug\
 C:\Users\SrLoera\Desktop\Graficacion-2.0-master\PickleRick\PickleRick\obj\Debug\PickleRick.Form1.resources
 C:\Users\SrLoera\Desktop\Graficacion-2.0-master\PickleRick\PickleRick\obj\Debug\PickleRick.Properties.Resources.resources
 C:\Users\SrLoera\Desktop\Graficacion-2.0-master\PickleRick\PickleRick\obj\Debug\PickleRick.csproj.GenerateResource.Cache
+C:\Users\the_g\OneDrive\Escritorio\Graficacion-2.0-master\PickleRick\PickleRick\bin\Debug\PickleRick.exe.config
+C:\Users\the_g\OneDrive\Escritorio\Graficacion-2.0-master\PickleRick\PickleRick\bin\Debug\PickleRick.exe
+C:\Users\the_g\OneDrive\Escritorio\Graficacion-2.0-master\PickleRick\PickleRick\bin\Debug\PickleRick.pdb
+C:\Users\the_g\OneDrive\Escritorio\Graficacion-2.0-master\PickleRick\PickleRick\obj\Debug\PickleRick.csprojAssemblyReference.cache
+C:\Users\the_g\OneDrive\Escritorio\Graficacion-2.0-master\PickleRick\PickleRick\obj\Debug\PickleRick.Form1.resources
+C:\Users\the_g\OneDrive\Escritorio\Graficacion-2.0-master\PickleRick\PickleRick\obj\Debug\PickleRick.Properties.Resources.resources
+C:\Users\the_g\OneDrive\Escritorio\Graficacion-2.0-master\PickleRick\PickleRick\obj\Debug\PickleRick.csproj.GenerateResource.cache
+C:\Users\the_g\OneDrive\Escritorio\Graficacion-2.0-master\PickleRick\PickleRick\obj\Debug\PickleRick.csproj.CoreCompileInputs.cache
+C:\Users\the_g\OneDrive\Escritorio\Graficacion-2.0-master\PickleRick\PickleRick\obj\Debug\PickleRick.csproj.CopyComplete
+C:\Users\the_g\OneDrive\Escritorio\Graficacion-2.0-master\PickleRick\PickleRick\obj\Debug\PickleRick.exe
+C:\Users\the_g\OneDrive\Escritorio\Graficacion-2.0-master\PickleRick\PickleRick\obj\Debug\PickleRick.pdb
